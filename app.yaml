@@ -4,8 +4,8 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: /profile.html
-  upload: /profile.html
+  static_files: profile.html
+  upload: profile.html
 
 - url: /(.*)
   static_files: /\1
