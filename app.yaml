@@ -3,10 +3,10 @@ api_version: 1
 threadsafe: true
 
 handlers:
-  - url: /
-    static_files: index.html
-    upload: index.html
+- url: /
+  static_files: web_profile/profile.html
+  upload: web_profile/profile.html
 
-  - url: /styles
-    static_files: /style.css
-    upload: /style.css
+- url: /(.*)
+  static_files: web_profile/\1
+  upload: web_profile/(.*)
